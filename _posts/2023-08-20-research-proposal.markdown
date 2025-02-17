@@ -2,7 +2,7 @@
 layout: post
 title:  "Unsupervised Data Validation Methods for Efficient Model Training"
 date:   2023-08-22 22:21:59 +00:00
-image: /images/3dgaussian.jpg
+image: /images/research-proposal.png
 categories: research
 author: "Yurii Paniv"
 authors: "<strong>Yurii Paniv</strong>"

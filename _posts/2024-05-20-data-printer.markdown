@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up the Data Printer with Improved English to Ukrainian Machine Translation"
 date:   2024-05-20 22:21:59 +00:00
-image: /images/3dgaussian.jpg
+image: /images/data-printer.png
 categories: research
 author: "Yurii Paniv"
 authors: "<strong>Yurii Paniv</strong>, Dmytro Chaplynskyi, Nikita Trynus, Volodymyr Kyrylov"
