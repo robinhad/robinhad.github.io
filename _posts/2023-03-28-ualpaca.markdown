@@ -3,7 +3,9 @@ layout: post
 title:  "UAlpaca"
 date:   2023-03-28 22:21:59 +00:00
 image: /images/ualpaca.png
-categories: github
+categories: GitHub
 code: https://github.com/robinhad/kruk
+model: https://huggingface.co/robinhad/UAlpaca-2.0-Mistral-7B
+demo: https://huggingface.co/spaces/robinhad/UAlpaca
 ---
 First Ukrainian instruction-tuned language models and datasets.

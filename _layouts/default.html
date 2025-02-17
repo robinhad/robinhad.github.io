@@ -92,6 +92,12 @@
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
               {% endif %}
+              {% if post.model %}
+              <a href="{{post.model}}">model</a> /
+              {% endif %}
+              {% if post.demo %}
+              <a href="{{post.demo}}">demo</a> /
+              {% endif %}
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
               {% endif %}
@@ -130,7 +136,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'github' %}
+          {% if cat == 'GitHub' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -167,6 +173,12 @@
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
               {% endif %}
+              {% if post.model %}
+              <a href="{{post.model}}">model</a> /
+              {% endif %}
+              {% if post.demo %}
+              <a href="{{post.demo}}">demo</a> /
+              {% endif %}
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
               {% endif %}
@@ -200,7 +212,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'github' %}
+          {% if cat != 'research' and cat != 'GitHub' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
