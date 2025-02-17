@@ -3,4 +3,14 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
 Gemfile.lock
+node_modules
+package.json
+favicon.ico
