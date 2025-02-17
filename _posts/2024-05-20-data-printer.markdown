@@ -12,4 +12,4 @@ code: https://github.com/lang-uk/dragoman
 model: https://huggingface.co/lang-uk/dragoman
 demo: https://huggingface.co/spaces/lang-uk/dragoman
 ---
-Here we trained a new model for English to Ukrainian machine translation, utilizing unsupervised data selection to reach SOTA performance on English-Ukrainian translation (FLORES test set).
+Here we trained a new model for English to Ukrainian machine translation, utilizing unsupervised data selection to reach SOTA performance on English-Ukrainian translation (FLORES test set). High-quality translations should help in the development of the Ukrainian language processing tools and resources.

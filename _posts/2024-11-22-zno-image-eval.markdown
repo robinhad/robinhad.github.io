@@ -9,4 +9,4 @@ authors: "<strong>Yurii Paniv</strong>, Artur Kiulian, Dmytro Chaplynskyi, Mykol
 venue: "arxiv"
 arxiv: https://arxiv.org/abs/2411.14647
 ---
-Here we benchmarked most of the existing multimodal models for Ukrainian language for academic performance and cultural understanding to establish an understanding what models perform best in which domains. We gathered a national exam dataset for this purpose.
+Here we benchmarked most of the existing multimodal LLMs for Ukrainian language for academic performance and cultural understanding to establish an understanding what models perform best for Ukrainian in multi-modal scenario. We gathered a national exam dataset for this purpose.

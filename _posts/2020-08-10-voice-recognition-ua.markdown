@@ -8,4 +8,4 @@ code: https://github.com/robinhad/voice-recognition-ua
 model: https://huggingface.co/robinhad/wav2vec2-xls-r-300m-uk
 demo: https://huggingface.co/spaces/robinhad/ukrainian-stt
 ---
-Speech-to-Text training scripts for Ukrainian WER 12,22%.
+Speech-to-Text training scripts for Ukrainian WER 12,22%. Outdated by now, there are a lot of better models <a href="https://github.com/egorsmkv/speech-recognition-uk">here</a>.

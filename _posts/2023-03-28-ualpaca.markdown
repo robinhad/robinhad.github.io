@@ -8,4 +8,4 @@ code: https://github.com/robinhad/kruk
 model: https://huggingface.co/robinhad/UAlpaca-2.0-Mistral-7B
 demo: https://huggingface.co/spaces/robinhad/UAlpaca
 ---
-First Ukrainian instruction-tuned language models and datasets.
+First Ukrainian instruction-tuned language models and datasets. This is a first publicly-known exploration of extracting Ukrainian-language capabilities in Large Language Models.

@@ -8,6 +8,6 @@ code: https://github.com/robinhad/ukrainian-tts
 model: https://github.com/robinhad/ukrainian-tts/releases
 demo: https://huggingface.co/spaces/robinhad/ukrainian-tts
 ---
-The most popular open source Ukrainian Text-to-Speech model.
+The most popular open source Ukrainian Text-to-Speech model with completely open and MIT-licensed stack.
 <br>Sample:
 <br><audio controls><source src="audio/tetiana.wav" type="audio/wav"></audio>

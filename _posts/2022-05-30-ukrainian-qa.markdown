@@ -7,4 +7,4 @@ categories: GitHub
 code: https://github.com/robinhad/ukrainian-qa
 model: https://huggingface.co/robinhad/ukrainian-qa
 ---
-Extractive Ukrainian Question Answering models with BERT.
+Extractive Ukrainian Question Answering models with BERT, useful for analyzing Ukrainian text.
