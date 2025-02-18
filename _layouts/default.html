@@ -270,37 +270,47 @@
               <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
-
+              {% assign has_previous = false %}
               <br>
               {% if post.website %}
-              <a href="{{post.website}}">🌐 website</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.website}}">🌐 website</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.paper}}">paper</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent}}">patent</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent2}}">patent #2</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent3}}">patent #3</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">📺 video</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.video}}">📺 video</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video2 %}
-              <a href="{{post.video2}}">📺 video #2</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.video2}}">📺 video #2</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.code}}">code</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.poster}}">poster</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.slides}}">slides</a>{% assign has_previous = true %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}
