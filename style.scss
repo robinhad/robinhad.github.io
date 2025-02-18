@@ -11,6 +11,24 @@
 /**************/
 /* BASE RULES */
 /**************/
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+//@media (max-width: 767px) {
+//  html {
+//    //scrollbar-width: none;
+//  }
+//}
+
+
+//::-webkit-scrollbar-thumb {
+//  background: #119413;
+//  border-radius: 2px;
+//}
+
 a {
   color: #1772d0;
   text-decoration: none;

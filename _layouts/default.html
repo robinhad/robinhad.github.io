@@ -88,32 +88,43 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% assign has_previous = false %}
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">📖 arxiv</a> /
+              <a href="{{post.arxiv}}" target="_blank">📖 arxiv</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.video}}" target="_blank">video</a>
+              {% assign has_previous = true %}
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}"><span class="svg-icon github"></span> code</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.code}}" target="_blank"><span class="svg-icon github"></span> code</a>
+              {% assign has_previous = true %}
               {% endif %}
               {% if post.model %}
-              <a href="{{post.model}}">🤗 model</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.model}}" target="_blank">🤗 model</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.demo %}
-              <a href="{{post.demo}}">🕹️ demo</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.demo}}" target="_blank">🕹️ demo</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.poster}}" target="_blank">poster</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.slides}}" target="_blank">slides</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.website}}" target="_blank">website</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.youtube}}" target="_blank">youtube</a>{% assign has_previous = true %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -155,41 +166,55 @@
               {{ post.date | date: "%Y-%m-%d" }}
 
               <br>
+              {% assign has_previous = false %}
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.website}}" target="_blank">website</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.paper}}" target="_blank">paper</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent}}" target="_blank">patent</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent2}}" target="_blank">patent #2</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.patent3}}" target="_blank">patent #3</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.video}}" target="_blank">video</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.video2}}" target="_blank">video #2</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}"><span class="svg-icon github"></span> code</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.code}}" target="_blank"><span class="svg-icon github"></span> code</a>{% assign
+              has_previous = true %}
               {% endif %}
               {% if post.model %}
-              <a href="{{post.model}}">🤗 model</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.model}}" target="_blank">🤗 model</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.demo %}
-              <a href="{{post.demo}}">🕹️ demo</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.demo}}" target="_blank">🕹️ demo</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.poster}}" target="_blank">poster</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              {% if has_previous %} / {% endif %}
+              <a href="{{post.slides}}" target="_blank">slides</a>{% assign has_previous = true %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}
