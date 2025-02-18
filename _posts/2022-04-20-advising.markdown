@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Advisor for several BSc and MSc students"
+date:   2025-02-16 22:21:59 +00:00
+image: /images/advising.png
+categories: Advisor
+
+---
+I'm currently an advisor for several BSc and MSc students at Ukrainian Catholic University, helping them with their research projects in the field of NLP, processing text and speech data in particular.

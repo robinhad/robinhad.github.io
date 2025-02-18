@@ -28,14 +28,12 @@
 
 <body>
   <div class="progress-bar" id="progressBar"></div>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+  <table class="main-table">
+    <tr class="zero-padding">
+      <td class="zero-padding">
+        <table class="content-table">
+          <tr class="zero-padding">
+            <td class="main-text-style">
               <h1>
                 Yurii Paniv
               </h1>
@@ -53,7 +51,7 @@
               <p>
 
               </p>
-              <p style="text-align:center">
+              <p class="social-media-align">
                 <!-- <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp; -->
                 <a href="https://github.com/robinhad"><span class="svg-icon github"></span> GitHub</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=iUMYDLkAAAAJ&hl">📚 Google Scholar</a> &nbsp;/&nbsp;
@@ -61,17 +59,15 @@
                   LinkedIn </a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
-                src="images/circle_bw_crop.jpg">
+            <td class="profile-pic-cell">
+              <img class="profile-pic" alt="profile photo" src="/images/circle_bw_crop.jpg">
             </td>
           </tr>
         </table>
 
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td class="section-title-cell">
               <h2>🪄 Research</h2>
               <hr>
               <p>
@@ -81,17 +77,16 @@
             </td>
           </tr>
         </table>
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td class="image-cell">
+              <img src="/tn{{post.image}}" alt="project image" class="image-cell-img" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td class="text-cell">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -105,7 +100,7 @@
               {% endif %}
               {% if post.video %}
               {% if has_previous %} / {% endif %}
-              <a href="{{post.video}}" target="_blank">video</a>
+              <a href="{{post.video}}" target="_blank">📺 video</a>
               {% assign has_previous = true %}
               {% endif %}
               {% if post.code %}
@@ -131,7 +126,7 @@
               {% endif %}
               {% if post.website %}
               {% if has_previous %} / {% endif %}
-              <a href="{{post.website}}" target="_blank">website</a>{% assign has_previous = true %}
+              <a href="{{post.website}}" target="_blank">🌐 website</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.youtube %}
               {% if has_previous %} / {% endif %}
@@ -148,10 +143,9 @@
         <br>
         <br>
         <br>
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td class="section-title-cell">
               <h2>🤗 Open Source Projects</h2>
               <hr>
               <p> These are projects that I have contributed to or created, that led to my research work.
@@ -159,17 +153,16 @@
             </td>
           </tr>
         </table>
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'GitHub' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td class="image-cell">
+              <img src="/tn{{post.image}}" alt="project image" class="image-cell-img" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td class="text-cell">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
@@ -180,7 +173,7 @@
               {% assign has_previous = false %}
               {% if post.website %}
               {% if has_previous %} / {% endif %}
-              <a href="{{post.website}}" target="_blank">website</a>{% assign has_previous = true %}
+              <a href="{{post.website}}" target="_blank">🌐 website</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.paper %}
               {% if has_previous %} / {% endif %}
@@ -200,11 +193,11 @@
               {% endif %}
               {% if post.video %}
               {% if has_previous %} / {% endif %}
-              <a href="{{post.video}}" target="_blank">video</a>{% assign has_previous = true %}
+              <a href="{{post.video}}" target="_blank">📺 video</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.video2 %}
               {% if has_previous %} / {% endif %}
-              <a href="{{post.video2}}" target="_blank">video #2</a>{% assign has_previous = true %}
+              <a href="{{post.video2}}" target="_blank">📺 video #2</a>{% assign has_previous = true %}
               {% endif %}
               {% if post.code %}
               {% if has_previous %} / {% endif %}
@@ -238,28 +231,40 @@
         <br>
         <br>
         <br>
-        <!--
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td class="section-title-cell">
+              <h2>Industry experience</h2>
+              {% assign years = "now" | date: "%Y" | minus: 2016 %}
+              <p>Overall I have {{ years }}+ years of industry experience, spanning recommendation systems and data
+                analysis for retail, automatic microchip quality assurance, financial domain and serving and processing
+                vast
+                amounts of geospatial data. More details and up-to-date information could be found on my <a
+                  href="https://www.linkedin.com/in/yurii-paniv-aa969b151/"><span class="svg-icon linkedin"></span>
+                  LinkedIn</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table class="content-table">
+          <tr>
+            <td class="section-title-cell">
               <h2>Other Projects</h2>
               <p> These include coursework, side projects and unpublished research work.
               </p>
             </td>
           </tr>
-        </table>-->
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        </table>
+        <table class="content-table">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'GitHub' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td class="image-cell">
+              <img src="/tn{{post.image}}" alt="project image" class="image-cell-img" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td class="text-cell">
               <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
@@ -268,7 +273,7 @@
 
               <br>
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              <a href="{{post.website}}">🌐 website</a> /
               {% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
@@ -283,10 +288,10 @@
               <a href="{{post.patent3}}">patent #3</a> /
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              <a href="{{post.video}}">📺 video</a> /
               {% endif %}
               {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
+              <a href="{{post.video2}}">📺 video #2</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
@@ -306,10 +311,9 @@
           {% endfor %}
         </table>
 
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="content-table">
           <tr>
-            <td style="padding:0px">
+            <td class="zero-padding">
               <br>
               <p style="text-align:center;font-size:small;">
                 Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's

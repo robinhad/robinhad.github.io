@@ -91,28 +91,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 767px) {
-  html {
-    scrollbar-width: none;
-  }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
-    background: #119413;
-    z-index: 1000;
-    transition: width 0.1s ease-out;
-  }
-}
 
 a {
   color: #1772d0;
@@ -223,6 +202,198 @@ span.highlight {
   }
 
 }
+
+.main-table {
+  width:100%;
+  max-width:800px;
+  border:0px;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.main-text-style {
+  padding:2.5%;
+  width:60%;
+  vertical-align:middle;
+  text-align: justify;
+
+}
+
+.profile-pic-cell {
+  padding:2.5%;
+  width:40%;
+  max-width:40%;
+
+}
+
+.profile-pic {
+  width:100%;
+  max-width:100%;
+  object-fit: cover;
+   border-radius: 50%;
+
+}
+
+.social-media-align {
+  text-align:center;
+}
+
+.content-table {
+  width:100%;
+  border:0px;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin-right:auto;
+  margin-left:auto;
+
+}
+
+.image-cell {
+  padding:2.5%;
+  width:25%;
+  vertical-align:middle;
+  min-width:120px;
+}
+
+.image-cell-img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+}
+
+.text-cell {
+  padding:2.5%;
+  width:75%;
+  vertical-align:middle;
+  text-align: justify;
+}
+
+.text-cell > p > audio {
+  width: 100%;
+}
+
+.section-title-cell {
+  padding:2.5%;
+  width:100%;
+  vertical-align:middle;
+}
+
+.section-title-cell > p {
+
+  text-align: justify;
+}
+
+.zero-padding {
+  padding:0px;
+}
+
+
+
+@media (max-width: 767px) {
+  table tr td[style*="width:60%"] {
+    display: block;
+    width: 100% !important;
+    order: 2;
+  }
+
+  table tr td[style*="width:40%"] {
+    display: block;
+    width: 100% !important;
+    order: 1;
+  }
+
+  /* Stack table cells vertically on mobile */
+  table tr {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /* Project images and content */
+  table tr td[style*="width:25%"],
+  table tr td[style*="width:75%"] {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* Center align content on mobile */
+  table tr td {
+    text-align: justify;
+    margin: 0 20px 0 20px;
+  }
+
+  //td:has(img) {
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //}
+
+  table tr td > img {
+    margin-top: 20px;
+    justify-self: center;
+  }
+
+  .text-cell {
+    width: auto;
+  }
+
+
+  .main-text-style {
+    width: auto;
+  }
+
+  .profile-pic {
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .profile-pic-cell {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    max-width: unset;
+  }
+
+  .image-cell {
+    margin-top: 15px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .section-title-cell {
+    width: auto;
+  }
+
+  .section-title-cell > p {
+    padding-top: 8px;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #119413;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+  }
+}
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

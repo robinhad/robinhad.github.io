@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "'Text-to-Speech Speedrun' Lecture"
+date:   2024-03-25 22:21:59 +00:00
+image: /images/tts-intro.png
+categories: Lecturer
+video: https://www.youtube.com/watch?v=VNoGmmz80RA
+
+---
+Was a public speaker on 2 events in the same month with the same topic: «Text-to-Speech speedrun».
