@@ -14,20 +14,30 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-width: thin;
 }
 
-//@media (max-width: 767px) {
-//  html {
-//    //scrollbar-width: none;
-//  }
-//}
+@media (max-width: 767px) {
+  html {
+    scrollbar-width: none;
+  }
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-//::-webkit-scrollbar-thumb {
-//  background: #119413;
-//  border-radius: 2px;
-//}
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #119413;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+  }
+}
 
 a {
   color: #1772d0;
